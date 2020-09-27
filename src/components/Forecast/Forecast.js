@@ -1,10 +1,25 @@
 import React from "react";
+import DailyWeather from "./components/DailyWeather/DailyWeather";
 import "./Forecast.scss";
-
-const Forecast = ({ att1, att2, children }) => (
-  <div className="forecast__container">
-    <h3> {children}</h3>
-  </div>
-);
+import "./components/DailyWeather";
+class Forecast extends React.Component {
+  render() {
+    const forecastList = this.props.forecastList;
+    return (
+      <div className="forecast__container">
+        <div className="forecast__title">Forecast</div>
+        <div className="forecast__list">
+          {forecastList.map(({ weekday, temperature }) => (
+            <DailyWeather
+              weekday={weekday}
+              temperature={temperature}
+              key={weekday}
+            />
+          ))}
+        </div>
+      </div>
+    );
+  }
+}
 
 export default Forecast;

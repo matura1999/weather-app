@@ -1,0 +1,17 @@
+.city {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    font-weight: 200;
+  }
+  &__name {
+    width: 30%;
+  }
+  &__temperature {
+    width: 20%;
+  }
+  &__icon {
+    width: 20%;
+  }
+}
