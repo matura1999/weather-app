@@ -7,6 +7,7 @@
         background-color: lightcyan;
         display: flex;
         flex-direction: column;
+
     }
 
     &__title {
@@ -18,7 +19,7 @@
     &__list {
         flex: 1;
         font-size: 20px;
-        margin-top: 7%;
+        margin-top: 2%;
         margin-left: 15%;
         margin-bottom: 20%;
         display: flex;

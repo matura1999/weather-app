@@ -4,16 +4,16 @@ import "./MainBlock.scss";
 const MainBlock = ({ weatheInfo }) => (
   <div className="mainBlock__container">
     <div className="mainBlock__dataBlock">
-      <span className="data__tempature">{weatheInfo.temperature}</span>
-      <span className="data__weatherType">{weatheInfo.weather}</span>
+      <span className="data__tempature">{weatheInfo.temperature}°</span>
+      <span className="data__weatherType">{weatheInfo.weatherType}</span>
       <div className="humidityAndWind">
         <div className="data__humidity">
           <span>HUMIDITY</span>
-          <span>{weatheInfo.humidity}</span>
+          <span>{weatheInfo.humidity}%</span>
         </div>
         <div className="data__wind">
           <span>WIND</span>
-          <span>{weatheInfo.wind}</span>
+          <span>{weatheInfo.windSpeed}K/M</span>
         </div>
       </div>
     </div>

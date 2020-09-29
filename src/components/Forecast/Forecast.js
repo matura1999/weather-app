@@ -9,10 +9,11 @@ class Forecast extends React.Component {
       <div className="forecast__container">
         <div className="forecast__title">Forecast</div>
         <div className="forecast__list">
-          {forecastList.map(({ weekday, temperature }) => (
+          {forecastList.map(({ weekday, temperature, icon }) => (
             <DailyWeather
               weekday={weekday}
               temperature={temperature}
+              icon={icon}
               key={weekday}
             />
           ))}
