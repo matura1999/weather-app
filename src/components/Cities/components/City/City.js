@@ -1,8 +1,6 @@
 import React from "react";
 import "./City.scss";
 
-// const icon = ;
-
 const City = ({ cityName, temperature, onCityClick, icon }) => (
   <button
     className="city__container"
