@@ -59,7 +59,7 @@ class App extends React.Component {
         const { daily } = data;
         let fiveDaysWeather = daily.slice(0, 5);
 
-        fiveDaysWeather.map(({ temp, weather, dt }) => {
+        fiveDaysWeather.map(({ temp, weather, dt }) => () => {
           const [{ icon }] = weather;
           const { day: temperature } = temp;
           const weekday = weekdayList[new Date(dt * 1000).getDay()];
